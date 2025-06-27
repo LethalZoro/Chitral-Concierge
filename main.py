@@ -185,4 +185,5 @@ with main_col:
         else:
             st.warning("Please ask a question first.")
 
-    st.markdown('<div class="footer">Built with ❤️ using Streamlit, Tavily, and OpenAI</div>', unsafe_allow_html=True)
+st.markdown("---")
+st.markdown('Made with ❤️ by a [Salik Labs Developer](https://www.saliklabs.com/)')
