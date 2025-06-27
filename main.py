@@ -13,9 +13,8 @@ st.set_page_config(
 
 # --- API KEY MANAGEMENT ---
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
-# Load the Tavily API key from the .env file
-tavily_api_key = os.getenv("TAVILY_API_KEY")
+openai.api_key = st.secrets.get("OPENAI_API_KEY") or os.getenv("OPENAI_API_KEY")
+tavily_api_key = st.secrets.get("TAVILY_API_KEY") or os.getenv("TAVILY_API_KEY")
 
 
 # --- UI STYLING ---
