@@ -135,7 +135,6 @@ def get_ai_response_with_context(query, web_context):
                 {"role": "system", "content": system_message},
                 {"role": "user", "content": user_prompt},
             ],
-            max_tokens=300,
             temperature=0.5,
         )
         return response.choices[0].message.content.strip()
