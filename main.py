@@ -6,7 +6,7 @@ from tavily import TavilyClient # Import the Tavily client
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(
-    page_title="Chitral Concierge",
+    page_title="Chitral by Concierge",
     page_icon="🏔️",
     layout="wide",
 )
@@ -144,8 +144,8 @@ def get_ai_response_with_context(query, web_context):
 left_spacer, main_col, right_spacer = st.columns([1, 3, 1])
 
 with main_col:
-    st.title("🏔️ Chitral Concierge Service")
-    st.markdown("##### Your personal AI guide to the culture, sights, and adventures of Chitral")
+    st.title("🏔️ Chitral by Concierge")
+    st.markdown("##### Your personal Concierge to the culture, sights, and adventures of Chitral")
     st.markdown("---")
 
     # Wrap the inputs in a form
